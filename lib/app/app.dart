@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:image_motor_search_app/app/constants/theme.dart';
 import 'package:image_motor_search_app/app/routing/app_router.dart';
 
 class MyApp extends StatelessWidget {
@@ -11,9 +12,7 @@ class MyApp extends StatelessWidget {
       routerConfig: routerApp,
       routeInformationParser: null,
       routeInformationProvider: null,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: theme,
     );
   }
 }
