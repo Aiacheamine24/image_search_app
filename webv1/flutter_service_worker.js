@@ -23,15 +23,15 @@ const RESOURCES = {"assets/fonts/MaterialIcons-Regular.otf": "38a7e8b6157f127270
 "canvaskit/skwasm.js.symbols": "741d50ffba71f89345996b0aa8426af8",
 "canvaskit/skwasm.wasm": "e42815763c5d05bba43f9d0337fa7d84",
 "canvaskit/skwasm.worker.js": "bfb704a6c714a75da9ef320991e88b03",
-"index.html": "388056c58e810d18f5674b67d980e45c",
-"/": "388056c58e810d18f5674b67d980e45c",
+"index.html": "1607da5934ef15e01b6db73f0edf0ce7",
+"/": "1607da5934ef15e01b6db73f0edf0ce7",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "flutter.js": "c71a09214cb6f5f8996a531350400a9a",
-"main.dart.js": "e7cbb8c603514713e802e19cb7710ab1"};
+"main.dart.js": "d8d4d5d79842d6613ea68cf386d4b842"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
