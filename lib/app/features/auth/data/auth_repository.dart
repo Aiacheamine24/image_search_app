@@ -39,9 +39,9 @@ class AuthRepositoryImpl implements AuthRepository {
           required String password,
           required String imagePath}) =>
       _authService.register(
-        username: username,
         email: email,
         password: password,
+        username: username,
         imagePath: imagePath,
       );
 }

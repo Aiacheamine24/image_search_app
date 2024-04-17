@@ -1,6 +1,8 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_motor_search_app/app/constants/app_sizes.dart';
+import 'package:image_motor_search_app/app/features/auth/presentation/cubit/auth_cubit.dart';
 import 'package:image_motor_search_app/app/widgets/custom_text_field.dart';
 import 'package:image_motor_search_app/app/widgets/take_picture_screen.dart';
 
@@ -9,9 +11,9 @@ class RegisterForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final usernameController = TextEditingController();
-    final emailController = TextEditingController();
-    final passwordController = TextEditingController();
+    final usernameController = TextEditingController(text: "noadmin1");
+    final emailController = TextEditingController(text: "noadmin1@gmail.com");
+    final passwordController = TextEditingController(text: "aaaaaa");
     return Form(
         child: Column(children: [
       CustomTextField(
@@ -55,7 +57,12 @@ class RegisterForm extends StatelessWidget {
             if (imagePath != null) {
               // Use the imagePath for face recognition
             }
-            print(imagePath);
+            // Call the register function from the cubit
+            context.read<AuthCubit>().register(
+                username: usernameController.text,
+                email: emailController.text,
+                password: passwordController.text,
+                imagePath: imagePath);
           },
           // ...
 
