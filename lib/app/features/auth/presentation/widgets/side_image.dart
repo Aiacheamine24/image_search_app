@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:image_motor_search_app/app/constants/constants.dart';
+import 'package:image_motor_search_app/app/core/constants/constants.dart';
 
 class ImageSide extends StatelessWidget {
   const ImageSide({super.key});

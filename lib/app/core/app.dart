@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:image_motor_search_app/app/constants/theme.dart';
-import 'package:image_motor_search_app/app/routing/app_router.dart';
+import 'package:image_motor_search_app/app/core/constants/theme.dart';
+import 'package:image_motor_search_app/app/core/routing/app_router.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

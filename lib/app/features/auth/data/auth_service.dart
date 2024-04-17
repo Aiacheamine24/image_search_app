@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:image_motor_search_app/app/constants/constants.dart';
+import 'package:image_motor_search_app/app/core/constants/constants.dart';
 
 class AuthService {
   final Dio _dio;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:image_motor_search_app/app/constants/app_sizes.dart';
+import 'package:image_motor_search_app/app/core/constants/app_sizes.dart';
 import 'package:image_motor_search_app/app/features/auth/presentation/cubit/auth_cubit.dart';
 import 'package:image_motor_search_app/app/features/auth/presentation/widgets/login_widget.dart';
 import 'package:image_motor_search_app/app/features/auth/presentation/widgets/register_form.dart';

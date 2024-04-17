@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:image_motor_search_app/app/constants/app_sizes.dart';
-import 'package:image_motor_search_app/app/constants/constants.dart';
+import 'package:image_motor_search_app/app/core/constants/app_sizes.dart';
+import 'package:image_motor_search_app/app/core/constants/constants.dart';
 
 class AuthHeaderDecoration extends StatelessWidget {
   const AuthHeaderDecoration({super.key});

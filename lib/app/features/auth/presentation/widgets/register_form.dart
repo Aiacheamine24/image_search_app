@@ -1,8 +1,7 @@
-import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:image_motor_search_app/app/constants/app_sizes.dart';
-import 'package:image_motor_search_app/app/widgets/custom_text_field.dart';
-import 'package:image_motor_search_app/app/widgets/take_picture_screen.dart';
+import 'package:image_motor_search_app/app/core/constants/app_sizes.dart';
+import 'package:image_motor_search_app/app/core/utils/pick_image.dart';
+import 'package:image_motor_search_app/app/core/widgets/custom_text_field.dart';
 
 class RegisterForm extends StatelessWidget {
   const RegisterForm({super.key});
@@ -43,22 +42,9 @@ class RegisterForm extends StatelessWidget {
       const SizedBox(height: Sizes.p8),
       ElevatedButton(
           onPressed: () async {
-            final cameras = await availableCameras();
-            final firstCamera = cameras.first;
-            final imagePath = await Navigator.push(
-              // ignore: use_build_context_synchronously
-              context,
-              MaterialPageRoute(
-                builder: (context) => TakePictureScreen(camera: firstCamera),
-              ),
-            );
-            if (imagePath != null) {
-              // Use the imagePath for face recognition
-            }
-            print(imagePath);
+            final image = await pickImage();
+            final bytes = await imageToBytes(image!);
           },
-          // ...
-
           style: ElevatedButton.styleFrom(
             backgroundColor: Theme.of(context).colorScheme.primary,
             shape: RoundedRectangleBorder(
